@@ -7,28 +7,28 @@ import { Home, Store, ShoppingCart, User, Settings } from 'lucide-react';
 const App: React.FC = () => {
     const dockItems = [
       {
-        icon: <Home size={32} />,
+        icon: <Home size={24} />,
         label: 'Home',
         onClick: () => console.log('Home clicked')
       },
       {
-        icon: <Store size={32} />,
+        icon: <Store size={24} />,
         label: 'Shop',
         onClick: () => console.log('Shop clicked')
       },
       {
-        icon: <ShoppingCart size={32} />,
+        icon: <ShoppingCart size={24} />,
         label: 'Cart',
         onClick: () => console.log('Cart clicked'),
         badgeCount: 3,
       },
       {
-        icon: <User size={32} />,
+        icon: <User size={24} />,
         label: 'Account',
         onClick: () => console.log('Account clicked')
       },
       {
-        icon: <Settings size={32} />,
+        icon: <Settings size={24} />,
         label: 'Settings',
         onClick: () => console.log('Settings clicked')
       }
@@ -45,7 +45,7 @@ const App: React.FC = () => {
               The smarter way to shop online, with trusted products and express delivery right to your door
             </ShinyText>
             
-            <Dock items={dockItems} />
+            <Dock items={dockItems} baseItemSize={40} magnification={48} />
         </main>
     );
 };
